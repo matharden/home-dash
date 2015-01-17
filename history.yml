@@ -1,0 +1,22 @@
+---
+buzzwords: |+
+  data: {"items":[{"label":"Pivoting","value":29},{"label":"Synergy","value":25},{"label":"Enterprise","value":14},{"label":"Turn-key","value":19},{"label":"Leverage","value":28},{"label":"Exit strategy","value":25},{"label":"Streamlininess","value":21},{"label":"Web 2.0","value":21},{"label":"Paradigm shift","value":27}],"id":"buzzwords","updatedAt":1421535561}
+
+convergence: |+
+  data: {"points":[{"x":480,"y":14},{"x":481,"y":7},{"x":482,"y":7},{"x":483,"y":13},{"x":484,"y":31},{"x":485,"y":9},{"x":486,"y":43},{"x":487,"y":20},{"x":488,"y":30},{"x":489,"y":2}],"id":"convergence","updatedAt":1421535561}
+
+valuation: |+
+  data: {"current":54,"last":64,"id":"valuation","updatedAt":1421535561}
+
+karma: |+
+  data: {"current":170725,"last":129382,"id":"karma","updatedAt":1421535561}
+
+synergy: |+
+  data: {"value":95,"id":"synergy","updatedAt":1421535561}
+
+my-trello-board: |+
+  data: {"items":[{"label":"To Do","value":13},{"label":"Blocked","value":3},{"label":"Action w/e 10 Jan","value":3},{"label":"Action w/e 17 Jan","value":2},{"label":"Doing","value":5},{"label":"Done","value":10}],"id":"my-trello-board","updatedAt":1421535506}
+
+welcome: |+
+  data: {"text":"Hey, Look what I can do!","id":"welcome","updatedAt":1421534524}
+
