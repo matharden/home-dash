@@ -4,7 +4,7 @@ A dashboard for home.
 
 Create a `local.sh` file with there variables:
 
-```
+```shell
 #!/bin/bash
  
 export AUTH_TOKEN="add_token_here"
@@ -20,19 +20,19 @@ dashing start
 
 And make it executable:
 
-```
+```shell
 chmod +x local.sh
 ```
 
 Get dependancies:
 
-```
+```shell
 bundle install
 ```
 
 ## Run the dashboard
 
-```
+```shell
 make
 ```
 
