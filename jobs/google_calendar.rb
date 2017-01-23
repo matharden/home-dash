@@ -3,7 +3,7 @@ require 'icalendar'
 ical_url = ENV['GOOGLE_CALENDAR']
 uri = URI ical_url
 
-SCHEDULER.every '15s', :first_in => 4 do |job|
+SCHEDULER.every '60s', :first_in => 4 do |job|
   result = Net::HTTP.get uri
   calendars = Icalendar.parse(result)
   calendar = calendars.first
