@@ -10,19 +10,19 @@ $background-color:  #f25f5c;  // red
 
   background-color: $background-color;
 
-  h2 { font-size: 2em;}
+  h2 { font-size: 2em; font-weight: 600; }
 
-  h1 { font-size: 2em;}
+  h1 { font-size: 1.5em;}
 
   .countdown-time {
     margin-top: 10px;
-    color: gold;
+    color: #ffe33d;
   }
 
   .before-more-info {
     font-size: 15px;
     position: absolute;
-    bottom: 52px;
+    bottom: 1em;
     left: 0;
     right: 0;
   }
