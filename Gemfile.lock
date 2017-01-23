@@ -85,7 +85,6 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    xml-simple (1.1.4)
 
 PLATFORMS
   ruby
@@ -93,9 +92,9 @@ PLATFORMS
 DEPENDENCIES
   dashing
   icalendar
+  json
   nokogiri
   ruby-trello
-  xml-simple
 
 BUNDLED WITH
    1.10.3
