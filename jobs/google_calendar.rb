@@ -1,10 +1,9 @@
 require 'icalendar'
 
-ical_url = ENV['GOOGLE_CALENDAR']
-uri = URI ical_url
+ical_urls = ENV['GOOGLE_CALENDARS'].split ','
 
-SCHEDULER.every '60s', :first_in => 4 do |job|
-  result = Net::HTTP.get uri
+def getEvents(cal)
+  result = Net::HTTP.get cal
   calendars = Icalendar.parse(result)
   calendar = calendars.first
 
@@ -15,6 +14,17 @@ SCHEDULER.every '60s', :first_in => 4 do |job|
       summary: event.summary
     }
   end.select { |event| event[:start] > DateTime.now }
+end
+
+SCHEDULER.every '60s', :first_in => 4 do |job|
+  events = []
+
+  # Get events from each calendar and add them to one list.
+  i = 0
+  while i < ical_urls.length do
+    events.concat(getEvents(URI ical_urls[i]))
+    i += 1
+  end
 
   events = events.sort { |a, b| a[:start] <=> b[:start] }
 

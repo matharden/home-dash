@@ -6,15 +6,17 @@ Create a `local.sh` file with there variables:
 
 ```shell
 #!/bin/bash
- 
+
 export AUTH_TOKEN="add_token_here"
 # Weather
 export WOEID="add_code_here"
+# Calendar
+export GOOGLE_CALENDARS="add_ical_address,_add_another_ical_here"
 # Trello
 export TRELLO_DEVELOPER_KEY="add_key_here"
 export TRELLO_MEMBER_TOKEN="add_token_here"
 export TRELLO_BOARD_ID="add_board_here"
- 
+
 dashing start
 ```
 
