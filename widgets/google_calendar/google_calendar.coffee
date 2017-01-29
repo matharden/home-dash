@@ -21,5 +21,5 @@ class Dashing.GoogleCalendar extends Dashing.Widget
       start_date = start.format('Do MMM')
       start_time = start.format('HH:mm')
 
-      next_events.push { summary: next_event.summary, start_date: start_date, start_time: start_time }
+      next_events.push { summary: next_event.summary, start_date: start_date, start_time: start_time, label: next_event.label, number: next_event.number }
     @set('next_events', next_events)

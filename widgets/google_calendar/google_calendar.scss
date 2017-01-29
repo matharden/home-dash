@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #247ba0;  // blue
+$background-color:  #28464b;  // Japanese indigo
 
 $title-color:       rgba(255, 255, 255, 1);
 $subtitle-color:    rgba(255, 255, 255, 0.7);
@@ -36,6 +36,11 @@ div.widget-google-calendar {
     width: calc(100% + 20px);
     font-size: 0.75em;
     margin: 30px -10px 0;
+
+    .cal-1 { background-color: #2b9eb3; }
+    .cal-2 { background-color: #931621; }
+    .cal-3 { background-color: #f18805; }
+    .cal-4 { background-color: #f8333c; }
 
     tr {
       border-bottom: 1px solid $background-color;

@@ -5,10 +5,11 @@
 <h4 data-bind="next_count"></h4>
 
 <table class="next">
-  <tr data-foreach-e='next_events'>
+  <tr data-foreach-e='next_events' data-bind-class="e.number">
+    <td data-bind="e.label"></td>
     <td data-bind="e.start_date"></td>
     <td data-bind="e.start_time"></td>
-    <td data-bind="e.summary"></td>
+    <td class="summary" data-bind="e.summary"></td>
   </tr>
 </table>
 
