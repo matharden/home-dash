@@ -10,30 +10,32 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 // ----------------------------------------------------------------------------
 // Widget-weather styles
 // ----------------------------------------------------------------------------
-.widget-news {
-
+div.widget-news {
+  padding: 0 10px;
   background-color: $background-color;
-  vertical-align: baseline !important;
 
   .headline-container {
     display: none;
   }
 
-  .heading span {
-    color: black;
-  }
-
-  .heading img {
-    margin-top: -5px;
-  }
-
   .description {
-    font-size: 0.8em;
+    font-size: 20px;
   }
 
-  .heading{
-    font-size: 1.2em;
-    padding: 20px;
+  .heading {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      margin-top: -7px;
+    }
+
+    span {
+      color: black;
+      font-size: 24px;
+    }
   }
 
 }

@@ -32,17 +32,14 @@ $background-color: darkturquoise
     text-transform: uppercase
     letter-spacing: 1px
     font-size: 10px
-    color: lighten($background-color, 15%)
+    color: rgba(255, 255, 255, 0.7)
 
 // background colors
 
 $background-colors: #52a5ff #48efff #4dff5a #ffe33d #ff9d37 #ff5131 #ff2c59
 
-=klimato-background($color, $percentage: 25%)
+=klimato-background($color)
   background-color: $color
-
-  .updated-at
-    color: lighten($color, $percentage)
 
 @for $index from 0 through 6
   .klimato-temperature-#{$index}
